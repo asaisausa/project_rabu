@@ -1,0 +1,90 @@
+
+header {
+    position: relative;
+    overflow: hidden;
+    color: rgb(76, 87, 128);
+    text-align: center;
+    padding: 80px;
+    margin: 0 -20px 20px -20px;
+    border-bottom: 4px dashed #a3d0ff;
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('ayaka.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+ 
+header h1 {
+    margin: 0 0 5px 0;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    color: #2b3a55;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+    line-height: 1.6;
+}
+ 
+/* Isi konten dibagi jadi kotak-kotak simple */
+.card {
+    background-color: white;
+    border: 2px solid #cfe4ff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+ 
+h2 {
+    color: #4a90e2;
+    border-bottom: 2px solid #a3d0ff;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-top: 0;
+}
+ 
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+ 
+.skills li {
+    background-color: #cfe4ff;
+    color: #2b3a55;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+ 
+a {
+    color: #4a90e2;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+a:hover {
+    text-decoration: underline;
+}
+ 
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
